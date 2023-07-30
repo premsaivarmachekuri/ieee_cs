@@ -716,7 +716,7 @@ hr {
   border-bottom: 1px solid #f1f1f1;
   text-decoration: none;
   display: inline-block;
-  float: left;
+  float: none;
   clear: both;
   position: relative;
   outline: 0;
@@ -1235,7 +1235,7 @@ textarea {
   height: 36px;
   text-align: center;
   display: inline-block;
-  float: left;
+  float: none;
   margin-right: 5px;
   line-height: 32px;
 }
