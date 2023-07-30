@@ -35,7 +35,22 @@ $('.darkmode button').click(function () {
     $('.description').toggleClass('whitecr');
     $('.head').toggleClass('whitecr');
     $('.contactSection').toggleClass('dark');
+    $('#dark').toggleClass('d-none');
+    $('#light').toggleClass('d-none');
+
     $('#light').toggleClass('d-none');
     $('#dark').toggleClass('d-none');
+
+    $('.testimonial-item_dark').css({
+        'background-color': '#101213',
+        'color': '#fff'
+    });
+
+    $('.testimonial-item:not(.testimonial-item_dark)').css({
+        'background-color': '#fff',
+        'color': '#101213'
+    });
+    
+
 
 });
