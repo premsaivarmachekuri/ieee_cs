@@ -1466,6 +1466,7 @@ textarea {
 .founder-item {
   border: 1px solid gray;
   margin: auto 25px;
+  margin-bottom: 1.5rem;
 }
 
 .mail input {
