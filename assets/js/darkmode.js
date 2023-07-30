@@ -35,5 +35,7 @@ $('.darkmode button').click(function () {
     $('.description').toggleClass('whitecr');
     $('.head').toggleClass('whitecr');
     $('.contactSection').toggleClass('dark');
+    $('#light').toggleClass('d-none');
+    $('#dark').toggleClass('d-none');
 
 });
