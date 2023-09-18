@@ -76,6 +76,18 @@
 	<!-- animate on scroll import -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<!-- animate on scroll import end -->
+		  <!-- // PWA  -->
+<script>
+	if ('serviceWorker' in navigator) {
+	  navigator.serviceWorker.register('/service-worker.js')
+		.then(function(registration) {
+		  console.log('Service Worker registered with scope:', registration.scope);
+		})
+		.catch(function(error) {
+		  console.error('Service Worker registration failed:', error);
+		});
+	}
+  </script>
 
 </head>
 
@@ -1170,6 +1182,8 @@
 			color: #ffd100 !important;
 		}
 	</style>
+
+		
 
 </body>
 </html>
