@@ -80,17 +80,13 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<!-- animate on scroll import end -->
 		  <!-- // PWA  -->
-<!-- <script>
-	if ('serviceWorker' in navigator) {
-	  navigator.serviceWorker.register('/service-worker.js')
-		.then(function(registration) {
-		  console.log('Service Worker registered with scope:', registration.scope);
-		})
-		.catch(function(error) {
-		  console.error('Service Worker registration failed:', error);
-		});
-	}
-  </script> -->
+		  <script>
+			if('serviceWorker' in navigator){
+			  navigator.serviceWorker.register('/service-worker.js');
+			} else {
+			  console.log("Service worker is not supported");
+			}
+		  </script>
 
 </head>
 
@@ -162,7 +158,6 @@
 								<a href="https://www.computer.org/" target="_blank"  class="btn btn-outline-warning btn-common video-popup">
 									<i class=" fa fa-sharp fa-solid fa-graduation-cap"></i>Learn
 									More</i></a>
-									<button id="install-button" style="display: none;">Install App</button>
 							</div>
 
 
