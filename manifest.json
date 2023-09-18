@@ -1,66 +1,23 @@
-<<<<<<< HEAD
 {
-  "background_color": "#ffffff",
-  "description": "IEEE-CS",
-  "dir": "ltr",
-  "display": "standalone",
-  "name": "ieeecsgitam.vercel",
-  "orientation": "any",
-  "scope": "/index.html",
-  "short_name": "ieeecsgitam.vercel",
-  "start_url": "/index.html",
-  "theme_color": "#ffffff",
-  "categories": [],
-  "screenshots": [],
+  "name": "IEEECS Gitam",
+  "short_name": "IEEECS",
+  "start_url": "/",
+  "background_color": "#FFDCB5",
+  "theme_color": "#1E003D",
   "icons": [
-    {
-      "src": "./icon.png",
-      "type": "image/x-png"
-    }
-  ],
-  "shortcuts": [],
-  "id": "ieeecs",
-  "lang": "en",
-  "display_override": [
-    "browser",
-    "fullscreen",
-    "window-controls-overlay",
-    "minimal-ui",
-    "standalone"
-  ],
-  "prefer_related_applications": true
-}
-=======
-  {
-    "background_color": "#ffffff",
-    "description": "IEEE-CS",
-    "dir": "ltr",
-    "display": "standalone",
-    "name": "ieeecsgitam.vercel",
-    "orientation": "any",
-    "scope": "/index.html",
-    "short_name": "ieeecsgitam.vercel",
-    "start_url": "/index.html",
-    "theme_color": "#ffffff",
-    "categories": [],
-    "screenshots": [],
-    "icons": [
       {
-        "src": "/icon.png",
-        "sizes": "512x512",
-        "type": "image/png"
+          "src": "/icon.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "maskable any"
+      },
+      {
+          "src": "/icon.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "maskable any"
       }
-    ],
-    "shortcuts": [],
-    "id": "ieeecs",
-    "lang": "en",
-    "display_override": [
-      "browser",
-      "fullscreen",
-      "window-controls-overlay",
-      "minimal-ui",
-      "standalone"
-    ],
-    "prefer_related_applications": true
-  }
->>>>>>> 4b9c06a (updated index and manifest.json for app)
+  ],
+  "display": "standalone",
+  "orientation":"portrait"
+}
