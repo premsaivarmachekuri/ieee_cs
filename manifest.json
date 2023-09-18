@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "background_color": "#ffffff",
   "description": "IEEE-CS",
@@ -29,3 +30,37 @@
   ],
   "prefer_related_applications": true
 }
+=======
+  {
+    "background_color": "#ffffff",
+    "description": "IEEE-CS",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "ieeecsgitam.vercel",
+    "orientation": "any",
+    "scope": "/index.html",
+    "short_name": "ieeecsgitam.vercel",
+    "start_url": "/index.html",
+    "theme_color": "#ffffff",
+    "categories": [],
+    "screenshots": [],
+    "icons": [
+      {
+        "src": "/icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "shortcuts": [],
+    "id": "ieeecs",
+    "lang": "en",
+    "display_override": [
+      "browser",
+      "fullscreen",
+      "window-controls-overlay",
+      "minimal-ui",
+      "standalone"
+    ],
+    "prefer_related_applications": true
+  }
+>>>>>>> 4b9c06a (updated index and manifest.json for app)

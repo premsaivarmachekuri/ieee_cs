@@ -3,6 +3,9 @@
 
 <head>
 
+	<!-- PWA -->
+	<link rel="manifest" href="/manifest.json">
+
 	<!-- Font Awesome -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
 	rel="stylesheet"/>
@@ -77,7 +80,7 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<!-- animate on scroll import end -->
 		  <!-- // PWA  -->
-<script>
+<!-- <script>
 	if ('serviceWorker' in navigator) {
 	  navigator.serviceWorker.register('/service-worker.js')
 		.then(function(registration) {
@@ -87,7 +90,7 @@
 		  console.error('Service Worker registration failed:', error);
 		});
 	}
-  </script>
+  </script> -->
 
 </head>
 
@@ -159,6 +162,7 @@
 								<a href="https://www.computer.org/" target="_blank"  class="btn btn-outline-warning btn-common video-popup">
 									<i class=" fa fa-sharp fa-solid fa-graduation-cap"></i>Learn
 									More</i></a>
+									<button id="install-button" style="display: none;">Install App</button>
 							</div>
 
 
@@ -1182,8 +1186,28 @@
 			color: #ffd100 !important;
 		}
 	</style>
+	<!-- PWA -->
 
-		
+	<script>
+		let deferredPrompt;
+	  
+		window.addEventListener('beforeinstallprompt', (e) => {
+		  e.preventDefault();
+		  deferredPrompt = e;
+		  document.getElementById('install-button').style.display = 'block';
+		});
+	  
+		document.getElementById('install-button').addEventListener('click', () => {
+		  deferredPrompt.prompt();
+		  deferredPrompt.userChoice.then((choiceResult) => {
+			if (choiceResult.outcome === 'accepted') {
+			  console.log('User accepted the PWA installation');
+			}
+			deferredPrompt = null;
+			document.getElementById('install-button').style.display = 'none';
+		  });
+		});
+	  </script>	
 
 </body>
 </html>
